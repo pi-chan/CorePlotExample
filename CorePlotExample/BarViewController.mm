@@ -1,18 +1,18 @@
 //
-//  PieViewController.m
+//  BarViewController.m
 //  CorePlotExample
 //
 //  Created by Hiromasa OHNO on 2013/12/27.
 //  Copyright (c) 2013年 xoyip. All rights reserved.
 //
 
-#import "PieViewController.h"
+#import "BarViewController.h"
 
-@interface PieViewController ()
+@interface BarViewController ()
 
 @end
 
-@implementation PieViewController
+@implementation BarViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,28 +41,30 @@
 {
     CGRect rect = CGRectMake(10, 40, 300, 300);
     CPTGraphHostingView* hostingView = [[CPTGraphHostingView alloc] initWithFrame:rect];
+    hostingView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
     CPTGraph* graph = [[CPTXYGraph alloc] initWithFrame:rect];
-    graph.axisSet = nil;
     hostingView.hostedGraph = graph;
     [self.view addSubview:hostingView];
     
-    CPTTheme* theme = [CPTTheme themeNamed:kCPTDarkGradientTheme];
+    CPTTheme* theme = [CPTTheme themeNamed:kCPTPlainWhiteTheme];
     [graph applyTheme:theme];
     
-    CPTPieChart* plot = [[CPTPieChart alloc] init];
-    plot.identifier = @"PIE";
+    CPTBarPlot* plot = [[CPTBarPlot alloc] init];
+    plot.identifier = @"BAR";
     plot.dataSource = self;
-    plot.delegate = self;
     [graph addPlot:plot];
+    graph.axisSet = nil;
     
-    plot.pieRadius = 100;
+    CPTXYPlotSpace* plotSpace = (CPTXYPlotSpace*)graph.defaultPlotSpace;
+    plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromInt(-1) length:CPTDecimalFromInt(6)];
+    plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromInt(0) length:CPTDecimalFromInt(16)];
 
     _data.clear();
-    _data.push_back(50);
-    _data.push_back(20);
+    _data.push_back(10);
+    _data.push_back(5);
     _data.push_back(15);
-    _data.push_back(3);
-    _data.push_back(12);
+    _data.push_back(8);
+    _data.push_back(2);
 }
 
 - (NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plot
@@ -72,15 +74,10 @@
 
 - (NSNumber *)numberForPlot:(CPTPlot *)plot field:(NSUInteger)fieldEnum recordIndex:(NSUInteger)idx
 {
-    return [NSNumber numberWithFloat:_data[idx]];
-}
-
-- (CGFloat)radialOffsetForPieChart:(CPTPieChart *)pieChart recordIndex:(NSUInteger)idx
-{
-    if(idx==2){
-        return 20;
+    if(fieldEnum == CPTBarPlotFieldBarLocation){
+        return [NSNumber numberWithInt:idx];
     }
-    return 0;
+    return [NSNumber numberWithFloat:_data[idx]];
 }
 
 @end

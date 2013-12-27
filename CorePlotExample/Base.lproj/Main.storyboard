@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Pie View Controller - Item-->
+        <!--Pie View Controller - Pie-->
         <scene sceneID="Mfa-MN-cpC">
             <objects>
                 <viewController id="M0y-72-C6g" customClass="PieViewController" sceneMemberID="viewController">
@@ -17,13 +17,32 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="oWG-zy-fhd"/>
+                    <tabBarItem key="tabBarItem" title="Pie" id="oWG-zy-fhd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rf3-FS-U2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="694" y="810"/>
         </scene>
-        <!--Scatter View Controller - Item-->
+        <!--Bar View Controller - Bar-->
+        <scene sceneID="pVb-dH-1dI">
+            <objects>
+                <viewController id="Uj0-iC-xeG" customClass="BarViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h9s-TC-uhH"/>
+                        <viewControllerLayoutGuide type="bottom" id="oOx-Ro-L0o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fbb-GO-kIS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bar" id="yB9-wp-d1Z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yq-Dc-8Ds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137" y="582"/>
+        </scene>
+        <!--Scatter View Controller - Scatter-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ScatterViewController" sceneMemberID="viewController">
@@ -36,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="vcv-cm-Mzd"/>
+                    <tabBarItem key="tabBarItem" title="Scatter" id="vcv-cm-Mzd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,6 +74,7 @@
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="USA-Oc-Ej4"/>
                         <segue destination="M0y-72-C6g" kind="relationship" relationship="viewControllers" id="Htf-PS-Aqu"/>
+                        <segue destination="Uj0-iC-xeG" kind="relationship" relationship="viewControllers" id="uI0-yl-aeU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJG-Os-r3O" userLabel="First Responder" sceneMemberID="firstResponder"/>

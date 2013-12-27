@@ -23,6 +23,7 @@
 		01A18547186D498100B98F16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01A18545186D498100B98F16 /* InfoPlist.strings */; };
 		01A18549186D498100B98F16 /* CorePlotExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A18548186D498100B98F16 /* CorePlotExampleTests.m */; };
 		01A18554186D4A6500B98F16 /* ScatterViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01A18553186D4A6500B98F16 /* ScatterViewController.mm */; };
+		01F92160186DBB5D00A1D724 /* BarViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01F9215F186DBB5D00A1D724 /* BarViewController.mm */; };
 		202CAAD00B44481A89A12F29 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F6853BD37642BCB6013E76 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		01A18548186D498100B98F16 /* CorePlotExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CorePlotExampleTests.m; sourceTree = "<group>"; };
 		01A18552186D4A6500B98F16 /* ScatterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScatterViewController.h; sourceTree = "<group>"; };
 		01A18553186D4A6500B98F16 /* ScatterViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScatterViewController.mm; sourceTree = "<group>"; };
+		01F9215E186DBB5D00A1D724 /* BarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarViewController.h; sourceTree = "<group>"; };
+		01F9215F186DBB5D00A1D724 /* BarViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BarViewController.mm; sourceTree = "<group>"; };
 		079583E4B5B747B7991DDB48 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D3F6853BD37642BCB6013E76 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -135,6 +138,8 @@
 				01A18553186D4A6500B98F16 /* ScatterViewController.mm */,
 				01056D4F186DB79500A6F49F /* PieViewController.h */,
 				01056D50186DB79500A6F49F /* PieViewController.mm */,
+				01F9215E186DBB5D00A1D724 /* BarViewController.h */,
+				01F9215F186DBB5D00A1D724 /* BarViewController.mm */,
 			);
 			path = CorePlotExample;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 				01A1852E186D498000B98F16 /* AppDelegate.m in Sources */,
 				01056D51186DB79500A6F49F /* PieViewController.mm in Sources */,
 				01A1852A186D498000B98F16 /* main.m in Sources */,
+				01F92160186DBB5D00A1D724 /* BarViewController.mm in Sources */,
 				01A18554186D4A6500B98F16 /* ScatterViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
