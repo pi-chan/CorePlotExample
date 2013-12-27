@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01056D51186DB79500A6F49F /* PieViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01056D50186DB79500A6F49F /* PieViewController.mm */; };
 		01A1851E186D498000B98F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A1851D186D498000B98F16 /* Foundation.framework */; };
 		01A18520186D498000B98F16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A1851F186D498000B98F16 /* CoreGraphics.framework */; };
 		01A18522186D498000B98F16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A18521186D498000B98F16 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01056D4F186DB79500A6F49F /* PieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieViewController.h; sourceTree = "<group>"; };
+		01056D50186DB79500A6F49F /* PieViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PieViewController.mm; sourceTree = "<group>"; };
 		01A1851A186D498000B98F16 /* CorePlotExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorePlotExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A1851D186D498000B98F16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		01A1851F186D498000B98F16 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +133,8 @@
 				01A18524186D498000B98F16 /* Supporting Files */,
 				01A18552186D4A6500B98F16 /* ScatterViewController.h */,
 				01A18553186D4A6500B98F16 /* ScatterViewController.mm */,
+				01056D4F186DB79500A6F49F /* PieViewController.h */,
+				01056D50186DB79500A6F49F /* PieViewController.mm */,
 			);
 			path = CorePlotExample;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 			files = (
 				01A18534186D498000B98F16 /* ViewController.m in Sources */,
 				01A1852E186D498000B98F16 /* AppDelegate.m in Sources */,
+				01056D51186DB79500A6F49F /* PieViewController.mm in Sources */,
 				01A1852A186D498000B98F16 /* main.m in Sources */,
 				01A18554186D4A6500B98F16 /* ScatterViewController.mm in Sources */,
 			);
